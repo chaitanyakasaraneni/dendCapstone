@@ -117,7 +117,7 @@ In the original dataset from [Kaggle](https://www.kaggle.com/berkeleyearth/clima
 
 
 ### Data Model
-The data model consists of tables immigration, us_cities_demographics, airport_codes, world_temperature, i94cit_res, i94port, i94mode, i94addr, i94visa
+The data model consists of tables `immigration`, `us_cities_demographics`, `airport_codes`, `world_temperature`, `i94cit_res`, `i94port`, `i94mode`, `i94addr`, `i94visa`
 
 <img src="imgs/data_model.png"/>
 
@@ -173,9 +173,10 @@ The data model consists of tables immigration, us_cities_demographics, airport_c
 2. Access Airflow UI at `localhost:8080`
 3. Create Airflow Connections:
     * AWS connection:
-    <img src="README_IMGS/aws_credentials.png"/>
+    <img src="imgs/connection-aws.png"/>
     * Redshift connection
-    <img src="README_IMGS/redshift.png"/>
+    <img src="imgs/connection-redshift.png"/>
+**WARNING: Remember to DELETE your cluster each time you are finished working to avoid large, unexpected costs.**
 4. Run `etl_dag` in Airflow UI
 
 ### Possible Scenerios, changes and approach
